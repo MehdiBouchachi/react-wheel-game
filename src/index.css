@@ -521,3 +521,97 @@ canvas {
 .theme-toggle:hover .icon {
   transform: rotate(180deg);
 }
+
+/* ===================================== */
+/* iPhone 4 & Ultra Small Devices (320px) */
+/* ===================================== */
+
+@media (max-width: 660px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 5rem 1rem 4rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* from 4.4rem */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    min-width: auto; /* REMOVE 640px constraint */
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .hero-wave {
+    height: 60px;
+  }
+
+  /* BUTTONS */
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  /* FEATURES */
+  .features .container {
+    padding: 2rem 1rem;
+    border-radius: 12px;
+  }
+
+  .features h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  textarea {
+    height: 150px;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  /* WHEEL */
+  canvas {
+    width: 260px;
+    height: 260px;
+  }
+
+  .pointer {
+    top: -14px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 20px solid var(--indigo-700);
+  }
+
+  .result {
+    font-size: 1.1rem;
+  }
+
+  .dot {
+    font-size: 1.4rem;
+  }
+
+  /* TOGGLE */
+  .theme-toggle {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .theme-toggle .icon {
+    font-size: 16px;
+  }
+}
