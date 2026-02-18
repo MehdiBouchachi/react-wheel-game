@@ -389,8 +389,9 @@ textarea::placeholder {
 }
 
 canvas {
-  width: 460px;
-  height: 460px;
+  width: min(90vw, 460px);
+  height: min(90vw, 460px);
+
   border-radius: 50%;
   background: var(--slate-50);
   box-shadow:
@@ -410,6 +411,19 @@ canvas {
   border-top: 30px solid var(--indigo-700);
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
   z-index: 10;
+}
+
+.wheel-section::before,
+.wheel-section::after {
+  pointer-events: none;
+}
+.wheel-section > * {
+  position: relative;
+  z-index: 2;
+}
+.wheel-section::before,
+.wheel-section::after {
+  z-index: 0;
 }
 
 .result {
