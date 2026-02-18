@@ -319,7 +319,9 @@ a.btn {
   bottom: -1px;
   left: 0;
   width: 100%;
-  height: 100px;
+
+  height: clamp(50px, 8vw, 100px);
+
   background: var(--white);
   border-top-left-radius: 60% 100%;
   border-top-right-radius: 60% 100%;
@@ -579,6 +581,112 @@ canvas {
 }
 
 /* iPhone 4 & Ultra Small Devices (320px) */
+
+/* ===================================================== */
+/* SMALL PHONES (iPhone 4, 320px–480px) */
+/* ===================================================== */
+
+@media (max-width: 480px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .hero {
+    padding: 4rem 1rem 3rem 1rem;
+  }
+
+  .hero-wave {
+    height: 50px;
+  }
+
+  .features .container {
+    padding: 2rem 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  canvas {
+    width: 85vw;
+    height: 85vw;
+  }
+
+  .pointer {
+    top: -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 18px solid var(--indigo-700);
+  }
+
+  .result {
+    font-size: 1.1rem;
+  }
+
+  .theme-toggle {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .theme-toggle .icon {
+    font-size: 16px;
+  }
+}
+
+/* ===================================================== */
+/* NORMAL PHONES (481px–768px) */
+/* ===================================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 5rem 1.5rem 4rem 1.5rem;
+  }
+
+  .hero-wave {
+    height: 70px;
+  }
+
+  .features .container {
+    padding: 3rem 1.5rem;
+  }
+
+  canvas {
+    width: min(85vw, 400px);
+    height: min(85vw, 400px);
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* ===================================================== */
+/* TABLET (769px–1024px) */
+/* ===================================================== */
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 6rem 2rem 5rem 2rem;
+  }
+
+  .hero-wave {
+    height: 80px;
+  }
+
+  .features .container {
+    padding: 3.5rem 2rem;
+  }
+
+  canvas {
+    width: min(70vw, 450px);
+    height: min(70vw, 450px);
+  }
+}
 
 @media (max-width: 660px) {
   section {
